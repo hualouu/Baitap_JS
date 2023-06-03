@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinhLaiDon(soTien, laiSuat, soNam) {
+            var laiDon = soTien * laiSuat / 100;
+            var tongTien = soTien + (soNam * laiDon);
+            return tongTien;
+        }
+        // Ví dụ sử dụng hàm tinhLaiDon
+        var tienVay = 50000000; // 50 triệu đồng
+        var ls = 6.9; // Lãi suất 6.9% /năm
+        var soNam = 2; // Số năm vay
+        var tongTien = tinhLaiDon(tienVay, ls, soNam);
+        document.write("Tổng số tiền cần trả sau " + soNam + " năm là: " + tongTien + " đồng.");
+        </script>
+</body>
+</html>
